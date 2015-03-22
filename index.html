@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Ionic + Angular: Superpowers for Mobile App Development</title>
+    <title>FrontInCuiaba 2015 - Construindo Aplicativos Híbridos com Ionic Framework</title>
 
-    <meta name="description" content="Ionic Framework Presentation: The beautiful, open source framework for developing hybrid mobile apps with HTML5.">
+    <meta name="description" content="FrontInCuiaba 2015 - Construindo Aplicativos Híbridos com Ionic Framework">
+    <meta name="author" content="https://twitter.com/alvarowolfx">
     <meta name="author" content="https://twitter.com/adamdbradley">
     <meta name="author" content="https://twitter.com/benjsperry">
     <link rel="shortcut icon" href="favicon.ico">
@@ -44,42 +45,99 @@
 
 
 
-        <section data-background="img/superpower.jpg">
-          <h1 style="margin-top: 330px;" class="dark-shadow">Superpowers<br>for Mobile App Development</h1>
+        <section>          
+            <img src="img/ionic-logo.png" width="250">
+            <h1>Construindo<br/>Aplicativos Híbridos<br/> com Ionic Framework</h1>          
         </section>
 
 
-        <section data-background="img/madison.jpg">
-          <img src="img/me.jpg" style="width:200px; height: 200px;
+        <section data-background="img/cuiaba.jpg">
+          <img src="img/alvaro.jpg" style="width:200px; height: 200px;
                                        max-width:none; max-height: none;
                                        position: absolute; left: 40px; top: -10px;
                                        border-radius: 50%; border: 4px solid black;
                                        box-shadow: 5px 0 10px black;">
-          <h1 class="left dark-shadow" style="margin-left:300px;">Adam Bradley</h1>
-          <h3 class="left dark-shadow" style="margin-left:300px;">Lead Ionic Developer</h3>
+          <h1 class="left dark-shadow" style="margin-left:300px;">Alvaro Viebrantz</h1>
+          <h3 class="left dark-shadow" style="margin-left:300px;">Analista de TI na Sefaz-MT</h3>
+          <h3 class="left dark-shadow" style="margin-left:300px;">CTO na startup Procurix</h3>
           <ul class="me dark-shadow">
-            <li style="background:url(img/marker.png) no-repeat 0 8px;">Madison, WI, USA</li>
+            <li style="background:url(img/marker.png) no-repeat 0 8px;">Cuiabá, MT, Brasil</li>
             <li style="background:url(img/twitter.png) no-repeat 0 16px;">
-              <a href="https://twitter.com/adamdbradley" target="_blank" style="text-decoration:none">@adamdbradley</a>
+              <a href="https://twitter.com/alvarowolfx" target="_blank" style="text-decoration:none">@alvarowolfx</a>
             </li>
             <li style="background:url(img/github.png) no-repeat 0 17px;">
-              <a href="https://github.com/adamdbradley" target="_blank" style="text-decoration:none">
-                adamdbradley</a>
+              <a href="https://github.com/alvarowolfx" target="_blank" style="text-decoration:none">
+                alvarowolfx</a>
               </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Topicos</h2>
+          <ol>
+            <li>Aplicativo Nativo vs Híbrido</li>
+            <li>Ionic Framework</li>
+            <li>Componentes de UI</li>
+            <li>Ferramentas Ionic</li>            
+          </ol>
+        </section>
+
+        <section>
+          <blockquote>
+            &ldquo;Eu quero um aplicativo nativo!&rdquo;
+          </blockquote>
+        </section>
+
+        <section>
+          <h3>É tudo uma questão de Engenharia vs Economia</h3>
+          <img>
+          //TODO diagrama de ven
+        </section>
+
+        <section>
+          <h2>O lado ruim de desenvolver na plataforma nativa</h2>
+          <ul>
+            <li>É necessário habilidade em cada plataforma</li>
+            <li>Código fonte totalmente separado</li>
+            <li>Desenvolvimento caro em termos de tempo e valor</li>
+            <li>As vezes o retorno não é tão visivel</li>
           </ul>
         </section>
 
 
         <section>
-          <h3 style="font-size: 80px">Hybrid Apps!</h3>
-          <p style="font-size: 32px"><strong>HTML5</strong> that acts like native</p>
-          <p style="font-size: 32px">Web wrapped in <strong>native layer</strong></p>
-          <p style="font-size: 32px">Direct access to <strong>native APIs</strong></p>
-          <p style="font-size: 32px">Familiar <strong>web dev</strong> environment</p>
-          <p style="font-size: 32px">A <strong>single code base</strong> (web platform!)</p>
+          <h3>Mais Plataformas. Mais Problemas.</h3>
+          <p style="margin-top: 60px">
+            <img src="img/apple.png" class="logo" width="200" height="200" style="margin-right: 10px">
+            <img src="img/android.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
+            <img src="img/windows.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
+            <img src="img/blackberry.png" class="logo" width="200" height="200" style="margin-left: 10px;">
+          </p>
+          <p><span class="light-text">
+            Por que ter que desenvolver individualmente para cada plataforma ?
+          </span></p>
         </section>
 
 
+        <section>
+          <blockquote>
+            &ldquo;E existe alguma alternativa ?&rdquo;
+          </blockquote>
+        </section>
+
+
+        <section>
+          <img src="img/cordova.png" class="logo" style="margin-bottom: 0;">
+          <h3>Aplicativos Hibridos!</h3>
+          <ul>
+            <li style="font-size: 32px"><strong>HTML5</strong> que se parece com nativo</li>
+            <li style="font-size: 32px">Web envolvido por uma <strong>camada nativa</strong></li>
+            <li style="font-size: 32px">Acesso direto às <strong>APIs nativas</strong></li>
+            <li style="font-size: 32px">Ambiente de <strong>desenvolvimento web</strong> familiar</li>
+          </ul>
+          <p style="font-size: 48px"><strong>One code base</strong> to rule then all!!!</p>
+        </section>
+                       
         <section data-background="img/oldphones.jpg">
           <blockquote style="font-size: 80px; font-family:Georgia; text-shadow: 5px 0 15px rgba(0,0,0,.7)">
             &ldquo;It's not 2007 anymore&rdquo;
@@ -157,12 +215,10 @@
             <img src="img/blackberry.png" style="opacity:0.8">
             <img src="img/firefoxos.png">
           </p>
-        </section>
-
+        </section>   
 
         <section data-background="img/websdk.png">
-        </section>
-
+        </section>   
 
         <section data-background="white">
           <img src="img/ionic-logo.svg" style="width:750px;">
