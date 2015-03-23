@@ -201,29 +201,50 @@
           <p style="font-size:10px">https://mixpanel.com/trends/#report/android_os_adoption</p>
         </section>
 
-
-        <section>
+ 
+        <section>          
           <h3 style="margin:0">SDK Nativas ...</h3>
-          <h2 style="font-size:2.2em;">São ótimas!</h2>
-          <p style="margin:30px auto 20px auto; width: 600px">
-            UI, APIs, views, navigation, stack history, transitions, interactions, gestures, etc.
-          </p>
+          <h4 style="font-size:1.2em;">são cheias de recursos!</h4>
+          <ul>
+            <li>Components de UI bem definidas (Guidelines)</li>
+            <li>Views</li>
+            <li>Navigation and stack history</li>
+            <li>Transitions</li>
+            <li>Gestures</li>
+          </ul>
           <p class="native-logos">
             <img src="img/apple.png">
             <img src="img/android.png">
             <img src="img/windows.png">
             <img src="img/blackberry.png" style="opacity:0.8">
             <img src="img/firefoxos.png">
-          </p>
-        </section>   
+          </p>      
+        </section>
 
-        <section data-background="img/websdk.png">
-        </section>   
+        <section>
+          <img src='img/native-stack.png'>
+        </section>
+
+
+        <section>
+          <h2>Mas não tem nenhuma SDK para a Web</h2>
+          <ul>
+            <li>Alguns poucos frameworks para aplicativos hibridos</li>
+            <li>Nós precisamos de <string>maior integração</strong> entre a parte web e nativa</li>
+            <li>Nós precisamos de mais components ricos de UI com estilo e interação que se façam a web parecer nativa</li>
+            <li>Nós precisamos de UI realmente pensadas para o ambiente movel</li>
+          </ul>          
+          <img src='img/web-stack.png'>
+        </section>
+
+        <section>
+          <h2> Nós não queremos isso ... </h2>
+          //Imagem jQuery Mobile
+        </section>        
 
         <section data-background="white">
           <img src="img/ionic-logo.svg" style="width:750px;">
         </section>
-
 
         <section data-background="white">
           <img src="img/focus-on-app.png">
@@ -231,50 +252,53 @@
 
 
         <section>
-          <h3 style="margin:0; font-size:32px">Web Technologies You Already</h3>
-          <h2 style="font-size: 85px;">Know &amp; Love</h2>
+          <h3 style="margin:0; font-size:32px">Tecnologias Web que você já conhece</h3>
+          <h2 style="font-size: 85px;">Já Conhece e Gosta</h2>
           <div style="margin-top: 30px">
             <img src="img/html.png" class="logo" width="185" height="260">
             <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
             <img src="img/js.png" class="logo" width="185" height="260">
           </div>
           <p style="margin-top: 30px; opacity: 0.6">
-            (You'll feel right at home)
+            (Você vai se sentir em casa)
           </p>
         </section>
 
 
         <section data-background="img/angular-bg.png">
-          <h3 style="font-size:42px; margin:0">Standing on the Shoulders</h3>
-          <h2 style="font-size:90px;">of Angular</h2>
-          <p style="margin-top:60px;"><strong>Extends the HTML</strong> vocabulary</p>
-          <p>Proven for <strong>large-scale</strong> app development</p>
-          <p>UI Components using <strong>Directives &amp; Services</strong></p>
+          <h3 style="font-size:42px; margin:0">Construido com</h3>
+          <h2 style="font-size:90px;">AngularJS</h2>
+          <p style="margin-top:60px;"><strong>Estende o HTML</strong> além da web</p>
+          <p>Uso em <strong>larga escala</strong> comprovado no desenvolvimento de aplicações</p>
+          <p>Componentes de UI usando <strong>Directives e Services</strong></p>
           </ul>
         </section>
 
 
         <section data-background="img/sass.png">
           <h2 style="font-size:3em; text-transform: none;">Sass!</h2>
-          <p>CSS generated from the <strong>Sass preprocessor</strong></p>
-          <p>Quickly give your app its own <strong>look and feel</strong></p>
-          <p>CSS designed to be <strong>easily overridden</strong></p>
-          <p><strong>Variables based</strong> with default settings</p>
+          <p>CSS gerado do <strong>preprocessador Sass</strong></p>
+          <p>Altere facilmente o <strong>look and feel</strong> do seu app</p>
+          <p>O CSS foi pensado para ser <strong>facilmente sobreescrito</strong></p>
+          <p><strong>Baseado em variáveis</strong> com bons valores padrões</p>
+          <br/>
+          <h4>Seu app com um visual bonito por padrão !</h4>
         </section>
 
 
         <section data-background="img/continuity.png">
+          //Trocar por imagens do Px
         </section>
 
 
         <section data-background="img/phones-stacked.png">
-          <h2 style="color:black; margin-bottom: 50px">How it all comes together</h2>
+          <h2 style="color:black; margin-bottom: 50px">Agora sim temos um SDK Web</h2>
           <ul class="stack">
-            <li style="background: #20ab93">Your App</li>
+            <li style="background: #20ab93">Seu App</li>
             <li style="background: #4c8df5">Ionic</li>
             <li style="background: #d94442">Angular</li>
             <li style="background: #3b4854">WebView (Cordova)</li>
-            <li style="background: #d4deee; color: #3b4854;">Native App</li>
+            <li style="background: #d4deee; color: #3b4854;">App Nativo</li>
           </ul>
         </section>
 
@@ -293,12 +317,12 @@
               <li>Smooth scrolling!</li>
             </ul>
             <pre><code data-trim contenteditable class="xml">
-<div class="list">
-  <div collection-repeat="c in contacts">
-    <h2>{{ c.name }}</h2>
-    <p>{{ c.email }}</p>
-  </div>
-</div></code></pre>
+              <div class="list">
+                <div collection-repeat="c in contacts">
+                  <h2>{{ c.name }}</h2>
+                  <p>{{ c.email }}</p>
+                </div>
+              </div></code></pre>
           </div>
         </section>
 
