@@ -1405,7 +1405,8 @@ body {
   font-weight: 900; }
 .reveal .native-logos img {
   width: 100px;
-  margin: 40px 20px 0 20px; }
+  margin: 40px 20px 0 20px;   
+  border-radius: 20%; }
 .reveal .stack {
   width: 330px;
   margin: 0 350px 0 0;
