@@ -381,17 +381,18 @@
               <li>Suporte a mutiplas pilhas de histórico</li>
             </ul>
             <pre><code data-trim contenteditable class="xml">
-<ion-tabs>
-  <ion-tab title="Home" icon="ion-ios-home">
-    <ion-nav-view name="home"></ion-nav-view>
+<ion-tabs class="tabs-icon-top tabs-positive">
+
+  <ion-tab title="Palestrantes" icon="ion-person" href='#/tab/persons'>
+    <ion-nav-view name="persons-tab"></ion-nav-view>
   </ion-tab>
 
-  <ion-tab title="About" icon="ion-ios-information">
-    <ion-nav-view name="about"></ion-nav-view>
+  <ion-tab title="Agenda" icon="ion-ios-clock" href="#/tab/agenda">
+    <ion-nav-view name="agenda-tab"></ion-nav-view>
   </ion-tab>
 
-  <ion-tab title="Contact" icon="ion-ios-world">
-    <ion-nav-view name="contact"></ion-nav-view>
+  <ion-tab title="Sobre" icon="ion-ios-information" href='#/tab/about'>
+    <ion-nav-view name="about-tab"></ion-nav-view>
   </ion-tab>
 </ion-tabs></code></pre>
           </div>
