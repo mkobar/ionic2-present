@@ -55,7 +55,7 @@
             <img src="img/dxtec-logo.png" width="500px">
         </section>
 
-        <section data-background="#e43137">
+        <section data-background="#313744">
             <img src="img/me.jpg" style="width:200px; height: 200px;
                                        max-width:none; max-height: none;
                                        position: absolute; left: 40px; top: -10px;
@@ -217,6 +217,10 @@
             <h4>Seu app com um visual bonito por padrão !</h4>
         </section>
 
+        <section data-background="#313744">
+            <img src="img/ionic-colors.png" width="80%">
+        </section>
+
         <section>
             <img src='img/native-icon.png' class='logo' width="210">
             <h1>Focado em nativo</h1>
@@ -255,11 +259,67 @@
         <section data-background="img/ionic-angular-v2.jpg">
         </section>
 
+        <section data-background="#ffffff">
+            <h3>Beta 11 vs RC</h3>
+
+            <img src="http://blog.ionic.io/wp-content/uploads/2016/09/beta11-vs-beta12.gif"
+                 alt="beta11-vs-beta12"
+                 class="aligncenter size-full wp-image-1448"
+                 scale="0">
+        </section>
+
         <section>
             <h2>O que melhorou no Ionic 2?</h2>
         </section>
 
-        <section>
+        <section data-background="#313744">
+            <h3>Simplicidade - Clean Javascript</h3>
+            <img src='img/page-sample.png' class='logo'>
+        </section>
+
+        <section data-background="#313744">
+            <h3>Rotas no Ionic 1</h3>
+
+            <pre style="box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); font-size: 1em; line-height: initial;">
+                <code data-trim contenteditable class="hljs javascript" style=" max-height: 100%; !important; background-color: #22272F;">$stateProvider
+    .state('app.conf', {
+        url: "/conf",
+        views: {
+            'menuContent': {
+                templateUrl: "states/conf/conf.html",
+                controller: 'ConfController'
+            }
+        }
+    });
+
+$state.go('app.conf');
+                </code>
+            </pre>
+        </section>
+
+        <section data-background="#ffffff">
+            <h2>NavController</h2>
+            <img src="img/navigation-push-pop.png">
+        </section>
+
+        <section data-background="#313744">
+            <h3>Você não precisa mais criar rotas!</h3>
+            <pre style="box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); font-size: 1em; line-height: initial;">
+                <code data-trim contenteditable class="hljs javascript" style=" max-height: 100%; !important; background-color: #22272F;">
+export class Page {
+
+    constructor(private nav: NavController) {
+    }
+
+    openPage(view): void {
+        this.nav.push(OtherPage);
+    }
+}
+                </code>
+            </pre>
+        </section>
+
+        <section data-background="#313744">
             <h3>Typescript</h3>
             <ul>
                 <li>Tipagem estática opcional</li>
@@ -274,35 +334,18 @@
         </section>
 
         <section>
-            <h3>Você não precisa mais criar rotas!</h3>
-            <!-- image de background do typescript e logo -->
-            <!-- falar sobre ecma 6 e 7 -->
-
-            <div class="col">
-                <h4>Ionic</h4>
-
-            </div>
-            <div class="col">
-                <h4>Ionic 2</h4>
-            </div>
-        </section>
-
-
-
-        <section>
             <h2>
                 <a style="text-decoration: none;" href="http://ionicframework.com/docs/v2/components/">Componentes de UI</a>
             </h2>
         </section>
 
         <section data-background="img/continuity.png">
-            <!--Trocar por imagens do Px  ? -->
         </section>
 
         <section>
             <h2>Ionicons</h2>
             <img src="img/ionicons.png" class="logo" width="655" height="436">
-            <p>700+ MIT licensed font-icons included</p>
+            <p>900+ MIT licensed font-icons included</p>
             <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a></p>
         </section>
 
