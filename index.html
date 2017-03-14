@@ -25,11 +25,11 @@
 
     <!-- Printing and PDF exports -->
     <script>
-        var link = document.createElement( 'link' );
+        var link = document.createElement('link');
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 
     <!--[if lt IE 9]>
@@ -39,236 +39,235 @@
 
 <body>
 
-<div class="reveal">
+    <div class="reveal">
 
-    <!-- Any section element inside of this container is displayed as a slide -->
-    <div class="slides">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
 
-        <section data-background="#ffffff">
-            <p>
-                <img src="img/ionic-logo-blue.png" class="logo" height="170" style="margin-right: 10px; padding-bottom: 20px;">
-                <img src="img/angular-logo.svg" class="logo" height="220" style="margin-left: 10px; margin-right: 10px;">
-                <img src="img/ts-logo.png" class="logo" height="170" style="margin-left: 10px; margin-right: 10px; padding-bottom: 20px;">
-            </p>
-            <h4>Apps Híbridos com Ionic 2, Angular 2 e Typescript</h4>
-            <br><br>
-            <img src="img/amcom-logo.jpg" width="500px">
-        </section>
+            <section data-background="#ffffff">
+                <p>
+                    <img src="img/ionic-logo-blue.png" class="logo" height="170" style="margin-right: 10px; padding-bottom: 20px;">
+                    <img src="img/angular-logo.svg" class="logo" height="220" style="margin-left: 10px; margin-right: 10px;">
+                    <img src="img/ts-logo.png" class="logo" height="170" style="margin-left: 10px; margin-right: 10px; padding-bottom: 20px;">
+                </p>
+                <h4>Apps Híbridos com Ionic 2, Angular 2 e Typescript</h4>
+                <img src="img/amcom-logo.jpg" height="400px">
+            </section>
 
-        <section data-background="#313744">
-            <img src="img/me.jpg" style="width:200px; height: 200px;
+            <section data-background="#313744">
+                <img src="img/me.jpg" style="width:200px; height: 200px;
                                        max-width:none; max-height: none;
                                        position: absolute; left: 40px; top: -10px;
                                        border-radius: 50%; border: 1px solid #3c3c3c;">
-            <h1 class="left" style="margin-left:300px;">Kevin Nascimento</h1>
-            <h4 class="left" style="margin-left:300px;">Analista Desenvolvedor @ AMcom </h4>
-            <ul class="me">
-                <li style="background:url(img/marker.png) no-repeat 0 8px;">Blumenau, SC - Brasil</li>
-                <li style="background:url(img/github.png) no-repeat 0 17px;">
-                    <a href="https://github.com/kevinnascimento" target="_blank" style="text-decoration:none">kevinnascimento</a>
-                </li>
-            </ul>
-        </section>
+                <h1 class="left" style="margin-left:300px;">Kevin Nascimento</h1>
+                <h4 class="left" style="margin-left:300px;">Analista Desenvolvedor @ AMcom </h4>
+                <ul class="me">
+                    <li style="background:url(img/marker.png) no-repeat 0 8px;">Blumenau, SC - Brasil</li>
+                    <li style="background:url(img/github.png) no-repeat 0 17px;">
+                        <a href="https://github.com/kevinnascimento" target="_blank" style="text-decoration:none">kevinnascimento</a>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Roteiro</h2>
-            <ol>
-                <li>Aplicativo Nativo vs Híbrido</li>
-                <li>Apache Cordova</li>
-                <li>Ionic Framework</li>
-                <li>Componentes de UI</li>
-                <li>Ionic 2 e Angular 2</li>
-                <li>Typescript</li>
-                <li>Ecossistema Ionic</li>
-            </ol>
-        </section>
+            <section>
+                <h2>Roteiro</h2>
+                <ol>
+                    <li>Aplicativo Nativo vs Híbrido</li>
+                    <li>Apache Cordova</li>
+                    <li>Ionic Framework</li>
+                    <li>Componentes de UI</li>
+                    <li>Ionic 2 e Angular 2</li>
+                    <li>Typescript</li>
+                    <li>Ecossistema Ionic</li>
+                </ol>
+            </section>
 
-        <section data-background='#262626'>
-            <h2>Qual escolher?</h2>
-            <img src="img/native-hybrid.jpg" class="logo">
-        </section>
+            <section data-background='#262626'>
+                <h2>Qual escolher?</h2>
+                <img src="img/native-hybrid.jpg" class="logo">
+            </section>
 
-        <section>
-            <h3 style="margin:0">Nativo ou Híbrido?</h3>
-            <img src="img/seuticket.png" style="height: 50%;">
-        </section>
+            <section>
+                <h3 style="margin:0">Nativo ou Híbrido?</h3>
+                <img src="img/seuticket.png" style="height: 50%;">
+            </section>
 
-        <section>
-            <img src="img/cordova.png" class="logo" style="margin-bottom: 0;">
-            <h3>Aplicativos Híbridos!</h3>
-            <ul>
-                <li style="font-size: 32px"><strong>HTML5</strong> que se parece com nativo</li>
-                <li style="font-size: 32px">Web envolvido por uma <strong>camada nativa</strong></li>
-                <li style="font-size: 32px">Acesso direto às <strong>APIs nativas</strong></li>
-                <li style="font-size: 32px">Ambiente de <strong>desenvolvimento web</strong> familiar</li>
-            </ul>
-        </section>
-
-        <section data-background="#ffffff">
-            <img src="img/cordova-app-architecture.png">
-        </section>
-        
-        <section data-background="#ffffff">
-            <h4>1614 plugins</h4>
-            <img src="img/cordova-plugins.png">
-            <a style="text-decoration: none;" href="https://cordova.apache.org/plugins/"><h5>https://cordova.apache.org/plugins/</h5></a>
-        </section>
-
-        <section data-background="#ffffff">
-            <h3>Material Design</h3>
-            <img src="img/material-design.png" class="logo">
-            <div style="margin-top: -20px">
-                <img src="img/html.png" class="logo" width="185" height="200">
-                <img src="img/css.png" class="logo" width="185" height="200" style="margin-left: 80px; margin-right: 80px;">
-                <img src="img/js.png" class="logo" width="185" height="200">
-            </div>
-        </section>
-
-        <section>
-            <h3 style="margin:0">SDKs Nativas ...</h3>
-            <h4 style="font-size:1.2em;">são cheias de recursos!</h4>
-            <div class="col">
+            <section>
+                <img src="img/cordova.png" class="logo" style="margin-bottom: 0;">
+                <h3>Aplicativos Híbridos!</h3>
                 <ul>
-                    <li>Components de UI bem definidas (Guidelines)</li>
-                    <li>Views</li>
-                    <li>Navigation and stack history</li>
-                    <li>Transitions</li>
-                    <li>Gestures</li>
+                    <li style="font-size: 32px"><strong>HTML5</strong> que se parece com nativo</li>
+                    <li style="font-size: 32px">Web envolvido por uma <strong>camada nativa</strong></li>
+                    <li style="font-size: 32px">Acesso direto às <strong>APIs nativas</strong></li>
+                    <li style="font-size: 32px">Ambiente de <strong>desenvolvimento web</strong> familiar</li>
                 </ul>
-                <p class="native-logos">
-                    <img src="img/apple.png">
-                    <img src="img/android.png">
-                    <img src="img/windows.png">
+            </section>
+
+            <section data-background="#ffffff">
+                <img src="img/cordova-app-architecture.png">
+            </section>
+
+            <section data-background="#ffffff">
+                <h4>1614 plugins</h4>
+                <img src="img/cordova-plugins.png">
+                <a style="text-decoration: none;" href="https://cordova.apache.org/plugins/">
+                    <h5>https://cordova.apache.org/plugins/</h5>
+                </a>
+            </section>
+
+            <section data-background="#ffffff">
+                <h3>Material Design</h3>
+                <img src="img/material-design.png" class="logo">
+                <div style="margin-top: -20px">
+                    <img src="img/html.png" class="logo" width="185" height="200">
+                    <img src="img/css.png" class="logo" width="185" height="200" style="margin-left: 80px; margin-right: 80px;">
+                    <img src="img/js.png" class="logo" width="185" height="200">
+                </div>
+            </section>
+
+            <section>
+                <h3 style="margin:0">SDKs Nativas ...</h3>
+                <h4 style="font-size:1.2em;">são cheias de recursos!</h4>
+                <div class="col">
+                    <ul>
+                        <li>Components de UI bem definidas (Guidelines)</li>
+                        <li>Views</li>
+                        <li>Navigation and stack history</li>
+                        <li>Transitions</li>
+                        <li>Gestures</li>
+                    </ul>
+                    <p class="native-logos">
+                        <img src="img/apple.png">
+                        <img src="img/android.png">
+                        <img src="img/windows.png">
+                    </p>
+                </div>
+                <div class="col">
+                    <ul class="stack" style="margin: 0">
+                        <li style="background: #d4deee; color: #3b4854;opacity:0.2;">Animations</li>
+                        <li style="background: #d4deee; color: #3b4854;opacity:0.3">Modals</li>
+                        <li style="background: #d4deee; color: #3b4854;opacity:0.5">Gestures</li>
+                        <li style="background: #d4deee; color: #3b4854;opacity:0.6">Lists</li>
+                        <li style="background: #d4deee; color: #3b4854;opacity:0.7">Buttons</li>
+                        <li style="background: #d4deee; color: #3b4854;opacity:0.8">Tabs</li>
+                        <li style="background: #d4deee; color: #3b4854;opacity:0.9">Navigation</li>
+                        <li style="background: #d4deee; color: #3b4854;">Scrolling</li>
+                        <li style="background: #3b4854">App Nativo</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Mas não há uma SDK para a Web</h2>
+                <ul>
+                    <li>É necessário preencher a
+                        <string>lacuna</strong> entre web e nativa</li>
+                    <li>É necessário componentes ricos, com estilo e interação que pareçam nativos</li>
+                    <li>São necessárias UIs realmente pensadas para o ambiente móvel</li>
+                </ul>
+                <img src='img/web-stack.png'>
+            </section>
+
+            <section data-background="white">
+                <img src="img/ionic-logo.svg" style="width:750px;">
+            </section>
+
+            <section>
+                <h3 style="margin:0; font-size:32px">Tecnologias Web que você já conhece</h3>
+                <h2 style="font-size: 85px;">Já Conhece e Gosta</h2>
+                <div style="margin-top: 30px">
+                    <img src="img/html.png" class="logo" width="185" height="260">
+                    <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
+                    <img src="img/js.png" class="logo" width="185" height="260">
+                </div>
+                <p style="margin-top: 30px; opacity: 0.6">
+                    (Você vai se sentir em casa)
                 </p>
-            </div>
-            <div class="col">
-                <ul class="stack" style="margin: 0">
-                    <li style="background: #d4deee; color: #3b4854;opacity:0.2;">Animations</li>
-                    <li style="background: #d4deee; color: #3b4854;opacity:0.3">Modals</li>
-                    <li style="background: #d4deee; color: #3b4854;opacity:0.5">Gestures</li>
-                    <li style="background: #d4deee; color: #3b4854;opacity:0.6">Lists</li>
-                    <li style="background: #d4deee; color: #3b4854;opacity:0.7">Buttons</li>
-                    <li style="background: #d4deee; color: #3b4854;opacity:0.8">Tabs</li>
-                    <li style="background: #d4deee; color: #3b4854;opacity:0.9">Navigation</li>
-                    <li style="background: #d4deee; color: #3b4854;">Scrolling</li>
-                    <li style="background: #3b4854">App Nativo</li>
+            </section>
+
+
+            <section data-background="img/angular-bg.png">
+                <h3 style="font-size:42px; margin:0">Construido com</h3>
+                <h2 style="font-size:90px;">AngularJS</h2>
+                <p style="margin-top:60px;"><strong>Estende o HTML</strong> além da web</p>
+                <p>Uso em <strong>larga escala</strong> comprovado no desenvolvimento de aplicações</p>
+                <p>Componentes de UI usando <strong>Directives e Services</strong></p>
                 </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Mas não há uma SDK para a Web</h2>
-            <ul>
-                <li>É necessário preencher a <string>lacuna</strong> entre web e nativa</li>
-                <li>É necessário componentes ricos, com estilo e interação que pareçam nativos</li>
-                <li>São necessárias UIs realmente pensadas para o ambiente móvel</li>
-            </ul>
-            <img src='img/web-stack.png'>
-        </section>
-
-        <section data-background="white">
-            <img src="img/ionic-logo.svg" style="width:750px;">
-        </section>
-
-        <section>
-            <h3 style="margin:0; font-size:32px">Tecnologias Web que você já conhece</h3>
-            <h2 style="font-size: 85px;">Já Conhece e Gosta</h2>
-            <div style="margin-top: 30px">
-                <img src="img/html.png" class="logo" width="185" height="260">
-                <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
-                <img src="img/js.png" class="logo" width="185" height="260">
-            </div>
-            <p style="margin-top: 30px; opacity: 0.6">
-                (Você vai se sentir em casa)
-            </p>
-        </section>
+            </section>
 
 
-        <section data-background="img/angular-bg.png">
-            <h3 style="font-size:42px; margin:0">Construido com</h3>
-            <h2 style="font-size:90px;">AngularJS</h2>
-            <p style="margin-top:60px;"><strong>Estende o HTML</strong> além da web</p>
-            <p>Uso em <strong>larga escala</strong> comprovado no desenvolvimento de aplicações</p>
-            <p>Componentes de UI usando <strong>Directives e Services</strong></p>
-            </ul>
-        </section>
+            <section data-background="img/sass.png">
+                <h2 style="font-size:3em; text-transform: none;">Sass</h2>
+                <p>CSS gerado do <strong>preprocessador Sass</strong></p>
+                <p>Altere facilmente o <strong>look and feel</strong> do seu app</p>
+                <p>O CSS foi pensado para ser <strong>facilmente sobreescrito</strong></p>
+                <p><strong>Baseado em variáveis</strong> com valores padrão</p>
+                <p><strong>Mixins</strong> reusáveis</p>
+                <br/>
+                <h4>Seu app com um visual bonito por padrão !</h4>
+            </section>
 
+            <section data-background="#313744">
+                <img src="img/ionic-colors.png" width="80%">
+            </section>
 
-        <section data-background="img/sass.png">
-            <h2 style="font-size:3em; text-transform: none;">Sass</h2>
-            <p>CSS gerado do <strong>preprocessador Sass</strong></p>
-            <p>Altere facilmente o <strong>look and feel</strong> do seu app</p>
-            <p>O CSS foi pensado para ser <strong>facilmente sobreescrito</strong></p>
-            <p><strong>Baseado em variáveis</strong> com valores padrão</p>
-            <p><strong>Mixins</strong> reusáveis</p>
-            <br/>
-            <h4>Seu app com um visual bonito por padrão !</h4>
-        </section>
+            <section>
+                <img src='img/native-icon.png' class='logo' width="210">
+                <h1>Focado em nativo</h1>
+                <ul>
+                    <li>Desenvolvido inspirado nas SDKs Nativas</li>
+                    <li>Construído para funcionar com o Cordova</li>
+                </ul>
+            </section>
 
-        <section data-background="#313744">
-            <img src="img/ionic-colors.png" width="80%">
-        </section>
+            <section>
+                <img src='img/performance-icon.png' class='logo' width="210">
+                <h1>Obcecado por Perfomance</h1>
+                <ul>
+                    <li>Hardware accelerated animations <strong>(CSS3)</strong></li>
+                    <li>Manipulação minima da DOM</li>
+                    <li>Remove o delay de 300ms que a WebView impõe <br/>(No more FastClick)</li>
+                </ul>
+            </section>
 
-        <section>
-            <img src='img/native-icon.png' class='logo' width="210">
-            <h1>Focado em nativo</h1>
-            <ul>
-                <li>Desenvolvido inspirado nas SDKs Nativas</li>
-                <li>Construído para funcionar com o Cordova</li>
-            </ul>
-        </section>
+            <section data-background="img/phones-stacked.png">
+                <h2 style="color:black; margin-bottom: 50px">Agora sim temos um SDK Web</h2>
+                <ul class="stack">
+                    <li style="background: #20ab93">Seu App</li>
+                    <li style="background: #4c8df5">Ionic</li>
+                    <li style="background: #d94442">Angular</li>
+                    <li style="background: #3b4854">WebView (Cordova)</li>
+                    <li style="background: #d4deee; color: #3b4854;">App Nativo</li>
+                </ul>
+            </section>
 
-        <section>
-            <img src='img/performance-icon.png' class='logo' width="210">
-            <h1>Obcecado por Perfomance</h1>
-            <ul>
-                <li>Hardware accelerated animations <strong>(CSS3)</strong></li>
-                <li>Manipulação minima da DOM</li>
-                <li>Remove o delay de 300ms que a WebView impõe <br/>(No more FastClick)</li>
-            </ul>
-        </section>
+            <section data-background="#ffffff">
+                <h4>Ionic Components</h4>
+                <img src='img/ionic-components.png' class='logo'>
+            </section>
 
-        <section data-background="img/phones-stacked.png">
-            <h2 style="color:black; margin-bottom: 50px">Agora sim temos um SDK Web</h2>
-            <ul class="stack">
-                <li style="background: #20ab93">Seu App</li>
-                <li style="background: #4c8df5">Ionic</li>
-                <li style="background: #d94442">Angular</li>
-                <li style="background: #3b4854">WebView (Cordova)</li>
-                <li style="background: #d4deee; color: #3b4854;">App Nativo</li>
-            </ul>
-        </section>
+            <section data-background="img/ionic-angular-v2.jpg">
+            </section>
 
-        <section data-background="#ffffff">
-            <h4>Ionic Components</h4>
-            <img src='img/ionic-components.png' class='logo'>
-        </section>
+            <section data-background="#ffffff">
+                <h3>Beta 11 vs RC</h3>
 
-        <section data-background="img/ionic-angular-v2.jpg">
-        </section>
+                <img src="http://blog.ionic.io/wp-content/uploads/2016/09/beta11-vs-beta12.gif" alt="beta11-vs-beta12" class="aligncenter size-full wp-image-1448" scale="0">
+            </section>
 
-        <section data-background="#ffffff">
-            <h3>Beta 11 vs RC</h3>
+            <section>
+                <h2>O que melhorou no Ionic 2?</h2>
+            </section>
 
-            <img src="http://blog.ionic.io/wp-content/uploads/2016/09/beta11-vs-beta12.gif"
-                 alt="beta11-vs-beta12"
-                 class="aligncenter size-full wp-image-1448"
-                 scale="0">
-        </section>
+            <section data-background="#313744">
+                <h3>Simplicidade - Clean Javascript</h3>
+                <img src='img/page-sample.png' class='logo'>
+            </section>
 
-        <section>
-            <h2>O que melhorou no Ionic 2?</h2>
-        </section>
+            <section data-background="#313744">
+                <h3>Rotas no Ionic 1</h3>
 
-        <section data-background="#313744">
-            <h3>Simplicidade - Clean Javascript</h3>
-            <img src='img/page-sample.png' class='logo'>
-        </section>
-
-        <section data-background="#313744">
-            <h3>Rotas no Ionic 1</h3>
-
-            <pre style="box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); font-size: 1em; line-height: initial;">
+                <pre style="box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); font-size: 1em; line-height: initial;">
                 <code data-trim contenteditable class="hljs javascript" style=" max-height: 100%; !important; background-color: #22272F;">$stateProvider
     .state('app.conf', {
         url: "/conf",
@@ -283,16 +282,16 @@
 $state.go('app.conf');
                 </code>
             </pre>
-        </section>
+            </section>
 
-        <section data-background="#ffffff">
-            <h2>NavController</h2>
-            <img src="img/navigation-push-pop.png">
-        </section>
+            <section data-background="#ffffff">
+                <h2>NavController</h2>
+                <img src="img/navigation-push-pop.png">
+            </section>
 
-        <section data-background="#313744">
-            <h3>Você não precisa mais criar rotas!</h3>
-            <pre style="box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); font-size: 1em; line-height: initial;">
+            <section data-background="#313744">
+                <h3>Você não precisa mais criar rotas!</h3>
+                <pre style="box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); font-size: 1em; line-height: initial;">
                 <code data-trim contenteditable class="hljs javascript" style=" max-height: 100%; !important; background-color: #22272F;">
 export class Page {
 
@@ -305,246 +304,261 @@ export class Page {
 }
                 </code>
             </pre>
-        </section>
+            </section>
 
-        <section data-background="#313744">
-            <h3>Typescript</h3>
-            <ul>
-                <li>Tipagem estática opcional</li>
-                <li>Capacidade de compilar para versões menores de JS</li>
-                <li>Acesso a funcionalidades EC6 e EC7</li>
-                <li>Grande suporte de ferramentas/IDEs com IntelliSense</li>
-            </ul>
-            <img src='img/typescript-class.png' class='logo'>
+            <section data-background="#313744">
+                <h3>Typescript</h3>
+                <ul>
+                    <li>Tipagem estática opcional</li>
+                    <li>Capacidade de compilar para versões menores de JS</li>
+                    <li>Acesso a funcionalidades EC6 e EC7</li>
+                    <li>Grande suporte de ferramentas/IDEs com IntelliSense</li>
+                </ul>
+                <img src='img/typescript-class.png' class='logo'>
 
-            <!-- image de background do typescript e logo -->
-            <!-- falar sobre ecma 6 e 7 -->
-        </section>
+                <!-- image de background do typescript e logo -->
+                <!-- falar sobre ecma 6 e 7 -->
+            </section>
 
-        <section>
-            <h2>
-                <a style="text-decoration: none;" href="http://ionicframework.com/docs/v2/components/">Componentes de UI</a>
-            </h2>
-        </section>
+            <section>
+                <h2>
+                    <a style="text-decoration: none;" href="http://ionicframework.com/docs/v2/components/">Componentes de UI</a>
+                </h2>
+            </section>
 
-        <section data-background="img/continuity.png">
-        </section>
+            <section data-background="img/continuity.png">
+            </section>
 
-        <section>
-            <h2>Ionicons</h2>
-            <img src="img/ionicons.png" class="logo" width="655" height="436">
-            <p>900+ MIT licensed font-icons included</p>
-            <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a></p>
-        </section>
-
-
-        <section data-background="white">
-            <p><code style="font-size: 1.2em;" class="ionic-blue">npm install -g ionic cordova</code></p>
-            <img src="img/cli.png" height="220" style="border: 0">
-            <p class="ionic-blue">Gera uma estrutura base para seu app pronta para sair desenvolvendo</p>
-            <p class="ionic-blue">Vem com servidor de <strong>LiveReload</strong></p>
-            <p class="ionic-blue">Execute e empacote <strong>apps nativos</strong></p>
-        </section>
+            <section>
+                <h2>Ionicons</h2>
+                <img src="img/ionicons.png" class="logo" width="655" height="436">
+                <p>900+ MIT licensed font-icons included</p>
+                <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a></p>
+            </section>
 
 
-        <section data-background="#232323">
-            <h2 style="color:#32b83b;font-family:Monaco;"><strong>Demo</strong></h2>
-            <h6 style="color:#32b83b;font-family:Monaco;">May the demo gods be with us</h6>
-        </section>
+            <section data-background="white">
+                <p><code style="font-size: 1.2em;" class="ionic-blue">npm install -g ionic cordova</code></p>
+                <img src="img/cli.png" height="220" style="border: 0">
+                <p class="ionic-blue">Gera uma estrutura base para seu app pronta para sair desenvolvendo</p>
+                <p class="ionic-blue">Vem com servidor de <strong>LiveReload</strong></p>
+                <p class="ionic-blue">Execute e empacote <strong>apps nativos</strong></p>
+            </section>
 
-        <section data-background="img/ionitron.png">
-            <blockquote class="ionic-blue" style=" margin-bottom: 250px; text-align: right;">
-                ...e o Ionic ainda tem mais !
-            </blockquote>
-        </section>
 
-        <section>
-            <h2>Ecossistema Ionic</h2>
-        </section>
+            <section data-background="#232323">
+                <h2 style="color:#32b83b;font-family:Monaco;"><strong>Demo</strong></h2>
+                <h6 style="color:#32b83b;font-family:Monaco;">May the demo gods be with us</h6>
+            </section>
 
-        <section>
-            <img src='img/ionic-native.png'>
-        </section>
+            <section data-background="img/ionitron.png">
+                <blockquote class="ionic-blue" style=" margin-bottom: 250px; text-align: right;">
+                    ...e o Ionic ainda tem mais !
+                </blockquote>
+            </section>
 
-        <section data-background="img/ionicio.png">
-        </section>
+            <section>
+                <h2>Ecossistema Ionic</h2>
+            </section>
 
-        <section data-background="img/ionic-analytics.png">
-        </section>
+            <section>
+                <img src='img/ionic-native.png'>
+            </section>
 
-        <section data-background="img/ionic-push.png">
-        </section>
+            <section data-background="img/ionicio.png">
+            </section>
 
-        <section data-background="img/ionic-view.png">
-        </section>
+            <section data-background="img/ionic-analytics.png">
+            </section>
 
-        <section data-background="img/ionic-creator.png">
-        </section>
+            <section data-background="img/ionic-push.png">
+            </section>
 
-        <section data-background="img/ionic-lab.png">
-        </section>
+            <section data-background="img/ionic-view.png">
+            </section>
 
-        <section data-background="img/ionic-deploy.png">
-        </section>
+            <section data-background="img/ionic-creator.png">
+            </section>
 
-        <section data-background="img/ionic-playground.png">
-        </section>
+            <section data-background="img/ionic-lab.png">
+            </section>
 
-        <section data-background="img/community.jpg">
-        </section>
+            <section data-background="img/ionic-deploy.png">
+            </section>
 
-        <section data-background="#FFF">
-            <div style='margin-bottom:320px'>
-                <img src="img/ionic-brazil-logo.png">
-                <a style="text-decoration:none;"  target="_blank" class="ionic-blue"
-                   href="https://ionicbrazil.herokuapp.com">
+            <section data-background="img/ionic-playground.png">
+            </section>
+
+            <section data-background="img/community.jpg">
+            </section>
+
+            <section data-background="#FFF">
+                <div style='margin-bottom:320px'>
+                    <img src="img/ionic-brazil-logo.png">
+                    <a style="text-decoration:none;" target="_blank" class="ionic-blue" href="https://ionicbrazil.herokuapp.com">
                     ionicbrazil.herokuapp.com
                 </a>
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <section data-background="#FFF">
-            <div style='margin-bottom:320px'>
-                <img src="img/ionic-brazil-sub-sedes.png">
-                <h2 class="ionic-blue">Guia do Desenvolvedor</h2>
-                <a style="text-decoration:none;"  target="_blank" class="ionic-blue"
-                   href="https://github.com/IonicBrazil/guia-do-desenvolvedor">
+            <section data-background="#FFF">
+                <div style='margin-bottom:320px'>
+                    <img src="img/ionic-brazil-sub-sedes.png">
+                    <h2 class="ionic-blue">Guia do Desenvolvedor</h2>
+                    <a style="text-decoration:none;" target="_blank" class="ionic-blue" href="https://github.com/IonicBrazil/guia-do-desenvolvedor">
                     github.com/IonicBrazil/guia-do-desenvolvedor
                 </a>
-                <br/>
-            </div>
-        </section>
+                    <br/>
+                </div>
+            </section>
 
-        <section data-background="img/ionic-adventures.jpg">
-            <div style='margin-bottom:320px'>
-                <h2>#ionicadventures</h2>
-                <a style="text-decoration:none;"  target="_blank"
-                   href="https://github.com/juarezpaf/ionic-adventures">
+            <section data-background="img/ionic-adventures.jpg">
+                <div style='margin-bottom:320px'>
+                    <h2>#ionicadventures</h2>
+                    <a style="text-decoration:none;" target="_blank" href="https://github.com/juarezpaf/ionic-adventures">
                     github.com/juarezpaf/ionic-adventures
                 </a>
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <section data-background="img/adoption.png">
-            <h2 class="ionic-blue">Adoção do Ionic</h2>
-            <ul class="ionic-blue">
-                <li>26.000+ Github Stars</li>
-                <li>Top 50 no Github</li>
-                <li>Top 10 trending JS Github</li>
-                <li>Ionic CLI 180.000 downloads/mês</li>
-                <li>v1.0 Alpha: Novembro/2013</li>
-                <li>v1.0 Beta: Março/2014</li>
-                <li>v1.0 Final: Maio/2015</li>
-                <li>v1.7 Update: Outubro/2015</li>
-                <li>v2.0 Alpha: Setembro/2015</li>
-                <li>v2.0 Beta: Dezembro/2015</li>
-                <li><b>v2.1 RC: Setembro/2016</b></li>
+            <section data-background="img/adoption.png">
+                <h2 class="ionic-blue">Adoção do Ionic</h2>
+                <ul class="ionic-blue">
+                    <li>4 milhões de apps</li>
+                    <li>28.400+ Github Stars</li>
+                    <li>Top 50 no Github</li>
+                    <li>Top 10 trending JS/TypeScript Github</li>
+                    <li>Ionic CLI 180.000 downloads/mês</li>
+                    <li>v1.0 Final: Maio/2015</li>
+                    <li>v2.0 Final: Janeiro/2017</li>
+                    <li><b>v2.2 Split Pane: Março/2017</b></li>
+                </ul>
+            </section>
 
-            </ul>
-        </section>
+            <section>
+                <h2><code style="font-size: 80px">&lt;/html&gt;</code></h2>
+                <h3 style="text-transform:none; font-size: 46px">
+                    <a style="text-decoration:none;" href="https://github.com/kevinnascimento" target="_blank">github.com/kevinnascimento</a>
+                </h3>
+                <h4 style="text-transform:none;font-size:36px;margin-top:50px;">
+                    <a style="text-decoration:none;" href="https://kevinnascimento.github.io/ionic2-present" target="_blank">https://kevinnascimento.github.io/ionic2-present/</a>
+                </h4>
+                <p>Inspirado por :</p>
+                <ul>
+                    <li style="text-transform:none;font-size:18px">
+                        <a style="text-decoration:none;" href="http://driftyco.github.io/ionic-present/#/">http://driftyco.github.io/ionic-present</a>
+                    </li>
+                    <li style="text-transform:none;font-size:18px">
+                        <a style="text-decoration:none;" href="http://adamdbradley.github.io/ionic-present/#/">http://adamdbradley.github.io/ionic-present</a>
+                    </li>
+                    <li style="text-transform:none;font-size:18px">
+                        <a style="text-decoration:none;" href="http://alvarowolfx.github.io/ionic-present">http://alvarowolfx.github.io/ionic-present</a>
+                    </li>
+                    <li style="text-transform:none;font-size:18px">
+                        <a style="text-decoration:none;" href="http://giorgiofellipe.com.br/ionic-present" target="_blank">http://giorgiofellipe.com.br/ionic-present</a>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h2><code style="font-size: 80px">&lt;/html&gt;</code></h2>
-            <h3 style="text-transform:none; font-size: 46px">
-                <a style="text-decoration:none;" href="https://github.com/kevinnascimento" target="_blank">github.com/kevinnascimento</a>
-            </h3>
-            <h4 style="text-transform:none;font-size:36px;margin-top:50px;">
-                <a style="text-decoration:none;" href="https://kevinnascimento.github.io/ionic2-present" target="_blank">https://kevinnascimento.github.io/ionic2-present/</a>
-            </h4>
-            <p>Inspirado por :</p>
-            <ul>
-                <li style="text-transform:none;font-size:18px">
-                    <a style="text-decoration:none;" href="http://driftyco.github.io/ionic-present/#/">http://driftyco.github.io/ionic-present</a>
-                </li>
-                <li style="text-transform:none;font-size:18px">
-                    <a style="text-decoration:none;" href="http://adamdbradley.github.io/ionic-present/#/">http://adamdbradley.github.io/ionic-present</a>
-                </li>
-                <li style="text-transform:none;font-size:18px">
-                    <a style="text-decoration:none;" href="http://alvarowolfx.github.io/ionic-present">http://alvarowolfx.github.io/ionic-present</a>
-                </li>
-                <li style="text-transform:none;font-size:18px">
-                    <a style="text-decoration:none;" href="http://giorgiofellipe.com.br/ionic-present" target="_blank">http://giorgiofellipe.com.br/ionic-present</a>
-                </li>
-            </ul>
-        </section>
+            <section>
+                <h1>Referências</h1>
+                <ul>
+                    <li>
+                        <a style="text-decoration:none;" href="http://ionicframework.com">ionicframework.com</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="http://forum.ionicframework.com">forum.ionicframework.com</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="http://github.com/driftyco/ionic">github.com/driftyco/ionic</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="http://ionic.io">ionic.io</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="https://www.youtube.com/channel/UChYheBnVeCfhCmqZfCUdJQw/feed">youtube.com/ionic-show</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="https://github.com/driftyco/ng-cordova">github.com/driftyco/ng-cordova</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="http://ionicbrazil.herokuapp.com">ionicbrazil.herokuapp.com</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="https://github.com/IonicBrazil">github.com/IonicBrazil</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="https://github.com/juarezpaf/ionic-adventures">github.com/juarezpaf/ionic-adventures</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="http://driftyco.github.io/ionic-present/#/">driftyco.github.io/ionic-present</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="http://adamdbradley.github.io/ionic-present/#/">adamdbradley.github.io/ionic-present</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration:none;" href="http://alvarowolfx.github.io/ionic-present/#/">alvarowolfx.github.io/ionic-present</a>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h1>Referências</h1>
-            <ul>
-                <li>
-                    <a style="text-decoration:none;" href="http://ionicframework.com">ionicframework.com</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="http://forum.ionicframework.com">forum.ionicframework.com</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="http://github.com/driftyco/ionic">github.com/driftyco/ionic</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="http://ionic.io">ionic.io</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="https://www.youtube.com/channel/UChYheBnVeCfhCmqZfCUdJQw/feed">youtube.com/ionic-show</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="https://github.com/driftyco/ng-cordova">github.com/driftyco/ng-cordova</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="http://ionicbrazil.herokuapp.com">ionicbrazil.herokuapp.com</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="https://github.com/IonicBrazil">github.com/IonicBrazil</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="https://github.com/juarezpaf/ionic-adventures">github.com/juarezpaf/ionic-adventures</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="http://driftyco.github.io/ionic-present/#/">driftyco.github.io/ionic-present</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="http://adamdbradley.github.io/ionic-present/#/">adamdbradley.github.io/ionic-present</a>
-                </li>
-                <li>
-                    <a style="text-decoration:none;" href="http://alvarowolfx.github.io/ionic-present/#/">alvarowolfx.github.io/ionic-present</a>
-                </li>
-            </ul>
-        </section>
+            <section>
+                <h1>Perguntas?</h1>
+            </section>
 
-        <section>
-            <h1>Perguntas?</h1>
-        </section>
+        </div>
 
     </div>
 
-</div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
 
-<script>
+            transition: 'fade', // none/fade/slide/convex/concave/zoom
 
-    // Full list of configuration options available at:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-
-        transition: 'fade', // none/fade/slide/convex/concave/zoom
-
-        // Optional reveal.js plugins
-        dependencies: [
-            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'plugin/zoom-js/zoom.js', async: true },
-            { src: 'plugin/notes/notes.js', async: true }
-        ]
-    });
-
-</script>
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }]
+        });
+    </script>
 
 </body>
+
 </html>
