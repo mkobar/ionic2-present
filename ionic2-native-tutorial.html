@@ -1,0 +1,142 @@
+    <!DOCTYPE html>
+    <html class="no-js" lang="en">
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <title>Ionic 2/3 Native Tutorial</title>
+
+    	    <meta name="keywords" content="ionic 2 native tutorial, ionic 3 native tutorial">
+    	    <meta name="description" content="Ionic Native allows you to add native functionality to your Ionic apps. Access the phone's camera, GPS, notifications and more. ">
+
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	
+            <link media="all" type="text/css" rel="stylesheet" href="css/prism.css">
+
+            <script src="js/prism.js"></script>
+        </head>
+        <body>
+
+        <div id="homebg">
+            <h1>Ionic 2 Native Tutorial</h1>
+        </div>
+
+        <div class="row" id="postcontent">
+            <div class="columns large-9 small-12">
+                <div class="inner-content">
+                    
+    <p>Ionic Native is a set of plugins that you can install within your 
+    Ionic project, that give you access to native functionality and more.</p>
+    <p>In Ionic 2, <strong>ionic-native</strong>&nbsp;is included by default when you use the Ionic CLI to generate a project.</p>
+    <p>In this tutorial, we're going to discover how to install and use Ionic native plugins.</p>
+                </div>
+
+                <div class="inner-content">
+                </div>
+
+                <div class="inner-content">
+                    <h2>Setting up a Test Project</h2>
+    <p>If you wish to follow along, make sure you have a new project 
+    installed with the Ionic-CLI. If you're following along from the 
+    beginning of the free ionic course, you can skip this step.</p>
+    <p>In the console, type:</p>
+    <pre class="language-markup"><code>$ ionic start geoShow blank
+
+    $ cd geoShow</code></pre>
+    <p>After it finishes the&nbsp;installation, <strong>cd</strong>&nbsp;into the geoShow folder.</p>
+                </div>
+                <div class="inner-content">
+                    <h2>How to Install an Ionic Native Plugin</h2>
+    <p>Installing a native plugin is made easy with the Ionic-CLI. The format is as follows (don't type this):</p>
+    <pre class="language-markup"><code>ionic plugin add plugin-name</code></pre>
+    <ul>
+    <li><strong>ionic</strong>: This is how we reference the Ionic-CLI.</li>
+    <li><strong>plugin add</strong>: This lets Ionic know that we want to add a plugin.</li>
+    <li><strong>plugin-name</strong>: This is the plugin name, which can either be in the form of a plugin ID, a local path, or a Git URL.</li>
+    </ul>
+    <p>When this command is finished running, it places the plugin in the <strong>/plugins</strong>&nbsp;folder inside of the project root.</p>
+                </div>
+                <div class="inner-content">
+                    <h2>How to use an Ionic Native Plugin</h2>
+    <p>After a plugin has been installed, usage is fairly straight forward.</p>
+    <p>Select the intended component file that will use the plugin, and then we add the plugin as an import:</p>
+    <pre class="language-javascript"><code>import {NativePlugin1, NativePlugin2, etc.. } from 'ionic-native';</code></pre>
+    <p>As you can see, you can add multiple Ionic Native plugins within a 
+    single import statement. These native plugins will always be added <strong>from</strong>&nbsp;ionic-native.</p>
+    <p>After a plugin has been imported, you're then free to use it in your 
+    component class. The documentation provides you with a Usage example, 
+    along with any associated methods and options associated with the 
+    plugin.</p>
+                </div>
+                <div class="inner-content">
+                    <h2>Let's&nbsp;give it a go</h2>
+    <p>Visit the official <a href="https://ionicframework.com/docs/v2/native/">Ionic Native documentation</a>,
+     this will provide you with a list of the available native plugins. 
+    Let's&nbsp;say for example that we wanted to display a user's current 
+    GPS coordinates. We&nbsp;would use the <a href="https://ionicframework.com/docs/v2/native/geolocation/">Geolocation</a>&nbsp;plugin.</p>
+    <p>From the documentation, we can see that it shows us the command for 
+    installing it. So let's do that at the console in our project folder:</p>
+    <pre class="language-markup"><code>$ ionic plugin add cordova-plugin-geolocation</code></pre>
+    <p>Next, let's head on over to our <strong>/src/pages/home.ts</strong> file and import it at the top:</p>
+    <pre class="language-javascript"><code>import { Geolocation } from 'ionic-native';</code></pre>
+    <p>Over at the <a href="https://ionicframework.com/docs/v2/native/geolocation/">Geolocation</a> documentation:</p>
+    <p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="img/1-1485035395218.jpg"></p>
+    <p>It shows us how to use it. In this case, it gives us 2 examples 
+    because this plugin has 2 methods (under static members) that we can 
+    use: <strong>.getCurrentPosition()</strong>&nbsp;and <strong>.watchPosition()</strong>. Let's look at <strong>.getCurrentPosition()</strong>&nbsp;as an example of how to understand the documentation so we can learn how to use it.</p>
+    <p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="img/2-1485035402648.jpg"></p>
+    <p>Here we can see that this method accepts <strong>options</strong>&nbsp;which is described as type <strong>GeolocationOptions</strong>. We can also see that it <strong>Returns</strong>&nbsp;a Promise <strong>&lt;Geoposition&gt;</strong>. Well, what do either of those even mean?</p>
+    <p>If you scroll down in the documentation further, you'll find sections for both <strong>GeolocationOptions</strong> and <strong>Geoposition</strong></p>
+    <p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="img/3-1485035407886.jpg"></p>
+    <p>Notice that the GeolocationOptions are all optional, we don't have to pass any of these.</p>
+    <p>Also, notice that under <strong>Geoposition</strong>, a type of <strong>Coordinates</strong>. This is also defined in the documentation:</p>
+    <p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="img/4-1485035412326.jpg"></p>
+    <p>All of these parameters are returned to us through the <strong>coords</strong>&nbsp;parameter. This is how we can get a person's location, altitude, speed, etc..&nbsp;</p>
+    <p>In our <strong>home.ts</strong>&nbsp;file, add:</p>
+    <pre class="language-javascript"><code>export class HomePage {
+
+      coords: any;
+      accuracy: any;
+      error: any;
+
+      constructor() {}
+
+      watch() {
+        Geolocation.getCurrentPosition().then((resp) =&gt; {
+          this.coords = resp.coords.latitude + ' ' + resp.coords.longitude;
+          this.accuracy = resp.coords.accuracy + ' meters';
+        }).catch((error) =&gt; {
+          this.error = 'Error getting location: ' + error;
+        });
+      }
+
+    }
+     </code></pre>
+    <p>So, we're defining 3 properties <strong>coords</strong>,&nbsp;<strong>accuracy</strong>, and&nbsp;<strong>error</strong>. Then, we're creating a <strong>watch()</strong>&nbsp;method uses the <strong>getCurrentPosition()</strong>&nbsp;method of <strong>Geolocation</strong>.</p>
+    <p>If it's successful, we define <strong>coords</strong>&nbsp;and <strong>accuracy</strong>&nbsp;to the response. Per the documentation, we know that the response will contain a <strong>coords</strong>&nbsp;object with <strong>.latitude</strong>, <strong>.accuracy</strong>, and others.</p>
+    <p>In the <strong>home.html</strong>&nbsp;template, paste in this HTML:</p>
+    <pre class="language-markup"><code>&lt;ion-card&gt;
+      &lt;ion-card-content&gt;
+        &lt;button ion-button (click)="watch()"&gt;Get Position&lt;/button&gt;
+        &lt;p&gt;Position: {{ coords }}&lt;/p&gt;
+        &lt;p&gt;Accuracy: {{ accuracy }} meters&lt;/p&gt;
+        &lt;p *ngIf="error"&gt;{{ error }}&lt;/p&gt;
+      &lt;/ion-card-content&gt;
+    &lt;/ion-card&gt;</code></pre>
+    <p>In the console, type:</p>
+    <pre class="language-markup"><code>$ ionic serve -l</code></pre>
+    <p>This gives us the following result:</p>
+    <p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="img/5-1485035419234.jpg"></p>
+    <p>The accuracy is <strong>really</strong>&nbsp;off, likely because I'm on a desktop. If you want to preview it on your phone, you will need to use the <strong>ionic run device</strong>&nbsp;(device could either be <em>android</em>&nbsp;or <em>ios</em>).&nbsp;</p>
+    <p>On my android phone, the accuracy is 18 meters.</p>
+                </div>
+                    <div class="inner-content">
+                        <h2>How to Remove an Ionic Native Plugin</h2>
+    <p>You may find that during the course of development, that you may amass a bunch of unused plugins.</p>
+    <p>After removing any references to the plugin in your code, in the console type:</p>
+    <pre class="language-markup"><code>$ ionic plugin remove plugin-name</code></pre>
+    <p>This will remove the plugin folder from <strong>/plugins</strong>&nbsp;as well as from any devices that have been added to the project.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
