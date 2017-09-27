@@ -1,1 +1,1 @@
-# Talk about Ionic
+# Talk about Ionic2
