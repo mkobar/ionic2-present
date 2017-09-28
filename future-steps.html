@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Ionic 2 Future Steps</title>
+
+	    <meta name="keywords" content="ionic 2 app, ionic 2 app tutorial">
+	    <meta name="description" content="Ionic app future steps.">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link media="all" type="text/css" rel="stylesheet" href="css/prism.css">
+
+        <script src="js/prism.js"></script>
+    </head>
+    <body>
+
+
+    <div id="homebg">
+        <div class="row header">
+        </div>
+    </div>
+
+    <div class="row courseinfo columns">
+        
+    <h1>Ionic 2/3+ Future Steps</h1>
+
+    </div>
+
+    <div class="row" id="postcontent">
+        <div class="columns large-9 small-12">
+
+<div class="inner-content"><h2>Adding Android or iOS to an Ionic 2/3+ Project</h2>
+<p>I will build out my project for an Android phone, since that is what I
+ own. In order to do that, you have to add android as a platform with 
+cordova. You will need to add either android or ios, as this project 
+will not work on a desktop environment.</p>
+<p>For Android, you will need <a href="https://developer.android.com/studio/index.html" target="_blank">Android Studio</a> with the <strong>Android-SDK</strong>, along with <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">Java</a>.&nbsp;</p>
+
+<p>For iOS, it is <strong>strongly</strong> suggested that you use a Mac with Xcode installed.&nbsp;Hoever these is a Windows option (see below).</p>
+
+<p>There is a platform guide though that gives you all of the information you need for both iOS and Android:</p>
+<ul>
+<li><a href="https://cordova.apache.org/docs/en/latest/guide/platforms/android/" target="_blank">Android Platform Guide</a></li>
+<li><a href="https://cordova.apache.org/docs/en/latest/guide/platforms/ios/" target="_blank">iOS Platform Guide</a></li>
+</ul>
+<p>Once you have what you need installed, run:<em> (or with ios)</em></p>
+<pre class="language-markup"><code>$ cordova platform add android</code></pre>
+</div>
+
+<div class="inner-content"><h2>Build for iOS on Windows</h2>
+<p>If you are really ready for a lot of work you  can <strong>Build for iOS on Windows</strong>&nbsp;but it is a bit of work.  A very good guide to do this can be found here: <a href="https://www.joshmorony.com/building-ionic-2-applications-for-ios-without-a-mac/" target="_blank"> Building Ionic 2 Applications for iOS without a Mac</a></p>
+
+<div class="inner-content"><h2>Running your Ionic App on a Mobile Phone</h2>
+<p>Connect your phone via USB cable (ensure debugging, the device's GPS, and all that jazz is on) and in the console, type:</p>
+<pre class="language-markup"><code>$ ionic run android --device</code></pre>
+<p>It will take a good minute on the first run, and then the app will 
+load up in the phone and if all goes according to plan, you will see a 
+screen requesting GPS access.</p>
+
+<p>Give it access to the GPS. Then you can click the <strong> GET POSITION</strong>&nbsp;button.&nbsp;</p>
+<p>Next you should see the alert with your current location.</p>
+</div>
+
+<div class="inner-content"><h2>Final Thoughts</h2>
+<p>Hopefully you learned a lot about how to make an Ionic app! We 
+learned how to create a very simple app, that used an Ionic native
+ plugin.</p>
+<p>As you can see, it's a very powerful framework for building hybrid apps.</p>
+<br>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+</footer>
+
+</body></html>
